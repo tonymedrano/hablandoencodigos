@@ -1,10 +1,10 @@
 import React from 'react';
 import './lettering.css';
 
-const Lettering = ({ text = [], title = '' }: any) => {
+const Lettering = ({ text = [], title = '' }) => {
   const renderText = () => {
     return text && text.length
-      ? text.map((line: any, index: any) => {
+      ? text.map((line, index) => {
           return <p key={`${index}`}>{line}</p>;
         })
       : null;

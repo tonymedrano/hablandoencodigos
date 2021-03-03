@@ -6,7 +6,7 @@ import {
 import ReactLogo from "../react-logo/react-logo";
 import "./nav.scss";
 
-const Nav = withNavigationContext(({ fullpage }: any) => {
+const Nav = withNavigationContext(({ fullpage }) => {
   const { slug } = fullpage.navigation;
 
   return (
@@ -22,7 +22,7 @@ const Nav = withNavigationContext(({ fullpage }: any) => {
             <h2>FULL-PAGE TRANSITION STRATEGY</h2>
             <small>
               Built with {`<3`} by{" "}
-              <a target="_blank" rel="noreferrer" href="https://caferati.me">
+              <a target="_blank" href="https://caferati.me">
                 @rcaferati
               </a>
             </small>

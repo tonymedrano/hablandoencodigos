@@ -1,7 +1,7 @@
 import React from 'react';
-import './section.scss';
+import './section.css';
 
-const Section = ({ children, wrapper = true, backgroundColor = '#FFFFFF' }: any) => {
+const Section = ({ children, wrapper = true, backgroundColor = '#FFFFFF' }) => {
   return (
     <section className="section" style={{ backgroundColor }}>
       {wrapper ? <div className="section-wrapper">{children}</div> : children}

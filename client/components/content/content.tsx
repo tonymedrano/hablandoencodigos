@@ -26,7 +26,7 @@ const options = [
   }
 ];
 
-const Content = withNavigationContext(({ fullpage, main, action }: any) => {
+const Content = withNavigationContext(({ fullpage, main, action }) => {
   return (
     <div className="content">
       <div className="content__main">{main}</div>
@@ -34,7 +34,7 @@ const Content = withNavigationContext(({ fullpage, main, action }: any) => {
         <div className="content__action__select">
           <Select
             selected={fullpage.navigation.animation || `foldOutAnimation`}
-            onChange={(value: any) => {
+            onChange={value => {
               fullpage.navigate({
                 ...fullpage.navigation,
                 animation: value
@@ -47,7 +47,6 @@ const Content = withNavigationContext(({ fullpage, main, action }: any) => {
         <div className="content__action__github">
           <a
             target="_blank"
-            rel="noreferrer"
             href="https://github.com/rcaferati/react-awesome-slider"
           >
             <svg viewBox="0 0 16 16" version="1.1" aria-hidden="true">

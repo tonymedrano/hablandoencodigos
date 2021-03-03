@@ -14,7 +14,7 @@ import Startup from "../startup/startup";
 
 const Slider = withNavigationHandlers(AwesomeSlider);
 
-export default withNavigationContext(({ fullpage }: any) => {
+export default withNavigationContext(({ fullpage }) => {
   const isFirstLoad = useRef(true);
   const animation = fullpage.navigation.animation || `foldOutAnimation`;
 
@@ -26,9 +26,9 @@ export default withNavigationContext(({ fullpage }: any) => {
       className="awesome-slider"
       onTransitionEnd={() => {
         // HANDLE THE PAGE ELEMENTS ANIMATION ON FIRST TRANSITION END
-        if (isFirstLoad.current === true && document.querySelector("body") !== null) {
-          (document.querySelector("body") as any).classList.add("animated");
-          (document.querySelector("body") as any).classList.add("visible");
+        if (isFirstLoad.current === true) {
+          document.querySelector("body").classList.add("animated");
+          document.querySelector("body").classList.add("visible");
         }
       }}
       media={media}

@@ -2,7 +2,7 @@ import React from "react";
 import "./layout.scss";
 import Nav from "../nav/nav";
 
-const Layout = ({ children }: any) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Nav />

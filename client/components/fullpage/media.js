@@ -10,7 +10,7 @@ import Section from "../section/section";
 import Page from "../page/page";
 import "./fullpage.css";
 
-export const Home = withNavigationContext(({ fullpage }: any) => {
+export const Home = withNavigationContext(({ fullpage }) => {
   return (
     <Section wrapper={false} backgroundColor="#292c35">
       <Content
@@ -40,7 +40,7 @@ export const Home = withNavigationContext(({ fullpage }: any) => {
   );
 });
 
-export const Third = withNavigationContext(({ fullpage }: any) => {
+export const Third = withNavigationContext(({ fullpage }) => {
   return (
     <Section wrapper={false} backgroundColor="#ff6f5e">
       <Background src="https://caferati.me/images/series/bojack-0.png" />

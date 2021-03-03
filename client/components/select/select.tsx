@@ -1,9 +1,9 @@
 import React from 'react';
 import './select.scss';
 
-const Select = ({ options = [], onChange, selected }: any) => {
+const Select = ({ options = [], onChange, selected }) => {
   const renderOptions = () => {
-    return options.map(({ value, label }: any) => {
+    return options.map(({ value, label }) => {
       return (
         <option key={value} value={value}>
           {label}
